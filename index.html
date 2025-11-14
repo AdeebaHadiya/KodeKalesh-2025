@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student AI Chat Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-header">
+    <div class="header-logo">EduSmart AI</div>
+    <nav class="header-nav">  
+      <button onclick="openNotes()">Notes</button>
+      <button onclick="openCompiler()">Compiler</button>
+      <button onclick="findYouTube()">YouTube</button>
+    </nav>
+  </header>
+
+  <main class="main-chat-container">
+    <section class="chat-box">
+      <h1>Student AI Chat Assis tant</h1>
+      <p>Ask anything. AI provides answers with PDF, Voice, MCQs options.</p>
+      <div id="chatArea" class="chat-area"></div>
+      <form id="chatForm" autocomplete="off">
+        <input id="userInput" type="text" placeholder="Type your query..." required />
+        <button type="submit">Ask</button>
+      </form>
+      <div class="option-bar" id="optionBar" style="display:none;">
+        <button onclick="makePDF()">Save PDF</button>
+        <button onclick="textToSpeech()">Listen</button>
+        <button onclick="generateMCQs()">Practice MCQs</button>
+      </div>
+      <div id="mcqSection"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
