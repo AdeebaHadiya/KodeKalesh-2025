@@ -80,4 +80,4 @@ Students and educators need a one-stop platform where they can quickly query any
 
 ## License
 
-This project is open source and free for educational use. See [LICENSE](LICENSE) file.
+This project is open source and free for educational use.
